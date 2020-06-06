@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    {% if not result %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+    {% else %}
+    <p>A share of {{ result['name'] }} ({{ result['symbol'] }}) costs ${{ result['price'] }}.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,29 @@
+.card {
+    background-color: #FFFFFB;
+}
+h5 {
+    margin-top: 10px;
+    color: #575A5E;
+}
+.experience-content {
+    margin-top: 20px;
+}
+h3, h4, h6, p {
+    color: #575A5E;
+}
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #575A5E;
+}
+.preview {
+    max-width: 80px;
+}
+.sample {
+    background-color: #7C90A0;
+}
+.sample p {
+    color: #FFFFFB;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

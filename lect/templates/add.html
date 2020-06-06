@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/add" method="post">
+        <label for="task">Task </label><input id="task" name="task" type="text" placeholder="Task Name">
+        <input disabled id="submit" type="submit">
+    </form>
+    <script>
+        document.querySelector('#task').onkeyup = function () {
+            document.querySelector('#submit').disabled = document.querySelector('#task').value === '';
+        }
+    </script>
+{% endblock %}

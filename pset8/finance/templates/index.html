@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Finance
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>${{ total }}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for trade in trades %}
+                <tr>
+                    <td>{{ trade['symbol'] }}</td>
+                    <td>{{ trade['name'] }}</td>
+                    <td>{{ trade['shares'] }}</td>
+                    <td>${{ trade['price'] }}</td>
+                    <td>${{ trade['total'] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>${{ cash }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+

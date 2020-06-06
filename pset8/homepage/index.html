@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margarita Andrianova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Head -->
+    <div class="container">
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <!--Photo-->
+                <div class="col-md-3 m-3">
+                    <img src="img/photo.jpg" class="card-img rounded-circle shadow-sm">
+                </div>
+                <!--Common info-->
+                <div class="col-md-8">
+                    <div class="row align-items-center h-100 mx-auto">
+                        <div class="card-body my-auto">
+                            <h1 class="card-title mb-4">Margarita Andrianova</h1>
+                            <dl class="row">
+                                <dt class="col-sm-3">Contacts</dt>
+                                <dd class="col-sm-9">
+                                    <p class="my-0"><a href="tel:+7-916-661-94-65">+7(916)661-94-65</a>&nbsp;| <a href="mailto:margo.andr@gmail.com">margo.andr@gmail.com</a>&nbsp;| <a href="https://github.com/mandrianova" target="_blank">GitHub</a></p>
+                                </dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-sm-3">About</dt>
+                                <dd class="col-sm-9">
+                                    <p>I solve problems, not tasks. I like to find optimal and simple solutions.</p>
+                                </dd>
+                            </dl>
+                            <button type="button" class="btn btn-light" onclick="thankYou()">Super Button!</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Tabs-->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="home" aria-selected="true">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="profile" aria-selected="false">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="contact" aria-selected="false">Portfolio</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="contact" aria-selected="false">Skills</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" id="additionally-tab" data-toggle="tab" href="#additionally" role="tab" aria-controls="contact" aria-selected="false">Additionally</a>
+          </li>
+        </ul>
+
+
+        <!--Tabs content-->
+
+
+        <div class="tab-content" id="myTabContent">
+
+            <!--Resume-->
+
+
+          <div class="tab-pane fade show active" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+              <h2>Resume</h2>
+              <!--Experience cards-->
+                <div class="row row-cols-1 row-cols-md-3 mt-3 mx-auto" id="cards">
+                    <!--Notamedia card-->
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="media">
+                                    <img src="img/notamedia.jpg" class="img-thumbnail rounded float-left mr-3 w-25" alt="notamedia">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Notamedia</h5>
+                                        <h6 class="card-subtitle text-muted">3&nbsp;years 6&nbsp;months</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                  <h6>Head Of Department</h6>
+                                  <p>The&nbsp;Key Department of&nbsp;the&nbsp;agency (3&nbsp;project teams and analysts). The&nbsp;staff is 18&nbsp;persons.</p>
+                                  <h6>Project Manager</h6>
+                                    <ul>
+                                        <li>Newsroom-services</li>
+                                        <li>Search</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--OneAgile card-->
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="media">
+                                    <img src="img/one_agile.png" class="img-thumbnail rounded float-left mr-3 w-25" alt="one_agile">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">One&nbsp;Agile</h5>
+                                        <h6 class="card-subtitle text-muted">2 years 8 months</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                  <h6>Product manager</h6>
+                                    <ul>
+                                        <li>Communication Platform</li>
+                                        <li>Feedback system</li>
+                                        <li>Platform for&nbsp;promo-sites</li>
+                                    </ul>
+                                  <h6>Project Manager</h6>
+                                    <ul>
+                                        <li>Promo actions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Smart-media card-->
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                              <div class="card-body">
+                                <div class="media">
+                                    <img src="img/smart_media.png" class="img-thumbnail rounded float-left mr-3 w-25" alt="smart-media">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Smart-media</h5>
+                                        <h6 class="card-subtitle text-muted">2&nbsp;years 1&nbsp;month</h6>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                  <h6>Head Of Department</h6>
+                                  <p>The&nbsp;Department of&nbsp;Development Sites and Promotional Materials in&nbsp;the&nbsp;agency</p>
+                                  <h6>Project Manager</h6>
+                                    <ul>
+                                        <li>Sites for&nbsp;small and middle business</li>
+                                        <li>Ecommerce projects</li>
+                                        <li>Support and development projects for&nbsp;digital marketing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!--Skills-->
+              <div class="row align-items-center mx-auto">
+                  <div class="col-xl-6">
+                    <h3>Skills</h3>
+                      <p>I have extensive experience in managing projects and teams. I also had projects related to marketing and analytics. Now I am developing my technical background and learning to program.</p>
+                  </div>
+                  <div class="col-xl-6 align-middle">
+                      <object type="image/svg+xml" data="img/chart.svg" class="position-relative img-fluid">
+                          Your browser does not support SVG
+                      </object>
+                  </div>
+              </div>
+              <div class="row align-items-center mx-auto my-4">
+                  <div class="col-3 mx-auto my-3"><img src="img/mos.svg" class="img-fluid w-75" alt="mos.ru"></div>
+                  <div class="col-3 mx-auto my-3"><img src="img/efes.png" class="img-fluid w-75" alt="efes"></div>
+                  <div class="col-3 mx-auto my-3"><img src="img/pm.png" class="img-fluid w-75" alt="pm"></div>
+                  <div class="col-3 mx-auto my-3 sample"><p>Other company and&nbsp;projects in&nbsp;my&nbsp;portfolio</p></div>
+              </div>
+          </div>
+            <!--Experience-->
+          <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+              <h2>Experience</h2>
+              <!--Notamedia-->
+              <div class="row mx-auto">
+                  <div class="media">
+                    <img src="img/notamedia.jpg" class="img-thumbnail rounded float-left mr-3 preview" alt="notamedia">
+                    <div class="media-body my-auto">
+                        <h5>Notamedia</h5>
+                        <h6 class="text-muted">3&nbsp;years 6&nbsp;months</h6>
+                        <div class="experience-content">
+                            <h6>Head Of Department</h6>
+                            <p class="text-muted">Dec 2018 – Jan 2020</p>
+                            <p>I successfully led the key department of the agency. There were 3 project teams and analysts (18 people) in my control. We worked on large government and commercial projects.</p>
+                            <p>The result of my work:</p>
+                            <ul>
+                                <li>optimization of work processes of my unit,</li>
+                                <li>successful realization of all contracts,</li>
+                                <li>absence of staff turnover,</li>
+                                <li>achievement and overflow of target profit.</li>
+                            </ul>
+                            <h6>Project Manager</h6>
+                            <p class="text-muted">Nov 2017 – Nov 2017</p>
+                            <p>I managed tasks of development of services for the newsroom staff and search service of the government portal. It was more than 100 users of the internal interface and public traffic of the portal up to 1.5 million visitors per day.</p>
+                            <p>The development team under my control included:</p>
+                            <ul>
+                                <li>backend developers,</li>
+                                <li>frontend developers,</li>
+                                <li>testers,</li>
+                                <li>designers,</li>
+                                <li>technical writers.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+             <!--OneAgile-->
+              <div class="row mx-auto mt-5">
+                  <div class="media">
+                    <img src="img/one_agile.png" class="img-thumbnail rounded float-left mr-3 preview" alt="oneagile">
+                    <div class="media-body my-auto">
+                        <h5>One&nbsp;Agile</h5>
+                        <h6 class="text-muted">2&nbsp;years 8&nbsp;months</h6>
+                        <div class="experience-content">
+                            <h6>Product and project manager</h6>
+                            <p class="text-muted">Jan 2014 – Aug 2016</p>
+                            <p>I successfully led the key department of the agency. There were 3 project teams and analysts (18 people) in my control. We worked on large government and commercial projects.</p>
+                            <p>The result of my work:</p>
+                            <ul>
+                                <li>optimization of work processes of my unit,</li>
+                                <li>successful realization of all contracts,</li>
+                                <li>absence of staff turnover,</li>
+                                <li>achievement and overflow of target profit.</li>
+                            </ul>
+                            <h6>Project Manager</h6>
+                            <p class="text-muted">Nov 2017 – Nov 2017</p>
+                            <p>I managed tasks of development of services for the newsroom staff and search service of the government portal. It was more than 100 users of the internal interface and public traffic of the portal up to 1.5 million visitors per day.</p>
+                            <p>The development team under my control included:</p>
+                            <ul>
+                                <li>backend developers,</li>
+                                <li>frontend developers,</li>
+                                <li>testers,</li>
+                                <li>designers,</li>
+                                <li>technical writers.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+          </div>
+            <!--Portfolio-->
+          <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+              <h2>Portfolio</h2>
+          </div>
+            <!--Skills-->
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <h2>Skills</h2>
+            </div>
+            <!--Additionally-->
+            <div class="tab-pane fade" id="additionally" role="tabpanel" aria-labelledby="additionally-tab">
+                <h2>Additionally</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="container">
+
+    </div>
+</div>
+<script>
+    function thankYou() {
+    alert("I'm here");
+    }
+</script>
+</body>
+</html>
